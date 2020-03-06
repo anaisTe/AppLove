@@ -1,11 +1,14 @@
 /*CLASES REUTILIZABLES*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-*:before, *:after {
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -15,6 +18,7 @@ body {
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.71429;
+  font-family: "Raleway", sans-serif;
 }
 
 img {
@@ -29,12 +33,14 @@ img {
   padding-right: 14px;
 }
 
-.container:before, .container:after {
+.container:before,
+.container:after {
   content: " ";
   display: table;
 }
 
-*:before, *:after {
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -57,12 +63,12 @@ img {
 }
 
 a {
-  color: #373B47;
+  color: #373b47;
   text-decoration: none;
 }
 
 a:hover {
-  color: #E95853;
+  color: #e95853;
 }
 
 .text-uppercase {
@@ -71,3 +77,89 @@ a:hover {
 
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
 
+header {
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+
+  /* outline: 1px solid red; */
+}
+
+nav {
+  padding: 10px 0;
+  float: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.fancy-nav {
+  overflow: hidden;
+}
+
+nav.container > div.nav-logo {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.fancy-nav li {
+  list-style: none;
+  width: 100px;
+  float: left;
+  text-align: center;
+}
+.fancy-nav li a {
+  font-weight: 700;
+}
+
+div.nav-logo a img {
+  width: 60px;
+  background: lightskyblue;
+}
+
+.wrapper {
+  padding-top: 80px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.wrapper div {
+  background: url(../assets/images/bg-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-color: #464646;
+
+  height: 526px;
+  padding: 40px 0;
+
+  text-align: center;
+  color: #fff;
+}
+
+
+.wrapper h1 {
+  font-size: 45px;
+  font-weight: 700;
+
+}
+
+.wrapper p {
+  margin-bottom: 100px;
+}
+
+.wrapper a {
+  background: #2ecc71;
+  color: inherit;
+  outline: 1px solid #2ecc71;
+  padding: 15px;
+}
+
+.wrapper a:hover {
+  background: #1e9e53;
+  color: #fff;
+  cursor: pointer;
+}
