@@ -140,11 +140,9 @@ div.nav-logo a img {
   color: #fff;
 }
 
-
 .wrapper h1 {
   font-size: 45px;
   font-weight: 700;
-
 }
 
 .wrapper p {
@@ -162,4 +160,107 @@ div.nav-logo a img {
   background: #1e9e53;
   color: #fff;
   cursor: pointer;
+}
+
+.fancy-box {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 70px 0px;
+  /* outline: 1px solid #2ecc71; */
+}
+
+#services {
+  background: #f17c72;
+  color: #fff;
+}
+
+/* .fancy-box .container {
+  outline: 1px solid #2ecc71;
+} */
+.fancy-box h2 {
+  font-size: 35px;
+}
+
+.fancy-box h2,
+h4 {
+  text-align: center;
+}
+
+.fancy-grid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.fancy-grid div {
+  text-align: center;
+  width: 33.3%;
+  flex-wrap: wrap;
+  margin: 25px 0px;
+}
+
+.fancy-grid div img {
+  width: 200px;
+  padding: 20px 0;
+}
+
+.fancy-grid div h5,
+h6 {
+  margin: 0;
+}
+
+.fancy-grid div h6 {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.fancy-img-work {
+  display: flex;
+  justify-content: center;
+}
+
+.fancy-img-work img {
+  width: 90%;
+  padding: 30px;
+  /* outline: 1px solid darkorange; */
+}
+
+.fancy-work-grid div img {
+  width: 80%;
+}
+
+.fancy-work-grid div h5 {
+  font-size: 16px;
+  color: #373b47;
+}
+
+footer {
+  /* outline: 1px solid purple; */
+  background: #373b47;
+  color: #fff;
+}
+
+footer p {
+  padding: 20px 0;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .fancy-grid div {
+    text-align: center;
+    width: 50%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .fancy-grid div {
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
