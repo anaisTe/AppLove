@@ -134,7 +134,7 @@ div.nav-logo a img {
   background-color: #464646;
 
   height: 526px;
-  padding: 40px 0;
+  padding: 40px 15px;
 
   text-align: center;
   color: #fff;
@@ -226,6 +226,7 @@ h6 {
 .fancy-img-work img {
   width: 90%;
   padding: 30px;
+  height: auto;
   /* outline: 1px solid darkorange; */
 }
 
@@ -258,6 +259,15 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  .wrapper div {
+    padding: 1px 15px;
+  }
+
+  .wrapper h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
   .fancy-grid div {
     text-align: center;
     width: 100%;
